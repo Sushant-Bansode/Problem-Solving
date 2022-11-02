@@ -1,1 +1,2 @@
-​
+INbuilt Lower_Bound Function Code == Implementation Using Binary Search.
+The Crux Here is to Return the, The Lower Index Which Is Directly Updated in the Binary Function Itself, According the Given Parameters.
