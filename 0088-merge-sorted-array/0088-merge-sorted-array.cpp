@@ -1,23 +1,39 @@
 class Solution {
 public:
-    void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) 
-    {
-        for (int i = m; i < nums1.size(); i++)
-            nums1[i] = INT_MIN;
-        
-        int pointer_one = 0;
-        int pointer_two = 0;
-        
-        while (pointer_one < (m + n) && pointer_two < n) {
-            if ((nums1[pointer_one] > nums2[pointer_two]) || (pointer_one >= m && nums1[pointer_one] == INT_MIN)) {
-                for (int i = (m + n - 1); i > pointer_one; i--)
-                    nums1[i] = nums1[i - 1];
-                nums1[pointer_one] = nums2[pointer_two];
-                pointer_two++;
+    void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
+           vector <int> arr(m+n);
+        int i = 0;
+        int j = 0;
+        int e = 0;
+        while(i < m && j < n)
+        {
+            if(nums1[i] < nums2[j])
+            {
+                arr[e++] = nums1[i++];
             }
-            else {
-                pointer_one++;
+            else if(nums2[j] < nums1[i])
+            {
+                arr[e++] = nums2[j++];
+            }
+            else
+            {
+                arr[e++] = nums1[i];
+                arr[e++] = nums1[i];
+                i++;
+                j++;
             }
         }
+        while(i < m)
+        {
+            arr[e++] = nums1[i++];
+        }
+        while(j < n)
+        {
+            arr[e++] = nums2[j++];
+        }
+        for(int k = 0 ; k < arr.size(); k++)
+        {
+            nums1[k] = arr[k];
+        }  
     }
 };
