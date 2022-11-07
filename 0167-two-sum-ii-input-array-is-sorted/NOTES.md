@@ -1,1 +1,1 @@
-​
+Nothing But Simple 2 Pointer In Opposite Directional Ones.
