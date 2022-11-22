@@ -1,1 +1,1 @@
-​
+Looped till, 1st Odd Digit from the End then After Getting 1st odd one, Storing the Index in one Int and Ans is nothing but from the 1st num[i] to the 1st occurence of the odd ones.
