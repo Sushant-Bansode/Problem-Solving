@@ -15,6 +15,6 @@ public:
   if(j == s.length( ))
   return -1;
   else
-  return -1;    
+  return 0;    
     }
 };
