@@ -1,13 +1,13 @@
 class Solution {
 public:
     char repeatedCharacter(string s) {
-    int count[26] = {0}; 
+    int count[256] = {0}; 
 
 for(int i = 0; i< s.length( ); ++i){
-       count[s[i] - 'a']++; 
-    if(count[s[i] - 'a'] == 2){
+    if(count[s[i]] == 1){
         return s[i]; 
         }
+ count[s[i]]++;     
  }
     
   return 0;    
