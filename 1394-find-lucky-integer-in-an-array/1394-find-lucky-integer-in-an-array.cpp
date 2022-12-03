@@ -8,7 +8,7 @@ public:
         
         for(auto i : mp){
            if(i.first==i.second) 
-          ans.push_back(i.second); }
+          ans.push_back(i.first); }
         
         if(ans.size()>=1){
         return ans[ans.size()-1];
