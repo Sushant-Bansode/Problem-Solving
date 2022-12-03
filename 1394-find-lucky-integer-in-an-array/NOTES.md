@@ -1,1 +1,6 @@
-​
+Putted all Elements into an Ordered Map,
+then Array Elements Value Equals to its Frequency means what,
+in map i.first == i.second,
+since it is Ordered map and sorted pushing it into, back in the ans array,
+and atlast returning the The largest ones that is the last element of the array, answer...
+as again the map is ordered inbuilt...
