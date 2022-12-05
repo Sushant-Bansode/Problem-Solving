@@ -1,1 +1,2 @@
-​
+Used the Brutest Approach using the naivest Approach to First Calculate the Length and then Finally After Finding the Middle node, Count then Traversing till it and Returning the Same.
+BETTER IS THE TWO POINTER APPROACH...
