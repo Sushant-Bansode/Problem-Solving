@@ -13,8 +13,8 @@ public:
     ListNode* middleNode(ListNode* head) {
       ListNode* temp = head;
       ListNode* ans = head;  
-        int n = 1;
-      while(temp-> next != NULL){
+        int n = 0;
+      while(temp){
           temp = temp->next;
           n++;
       }  
