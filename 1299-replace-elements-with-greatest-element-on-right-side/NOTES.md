@@ -1,1 +1,3 @@
-​
+Just A slight Variation of LEADERS in AN ARRAY,
+here also we maintaning the maximum element from the Right Side of the array,
+Stroring the Previous Maxelement Before updation in a Temporary Element and then, setting arr[i] to ittt...
