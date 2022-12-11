@@ -1,5 +1,12 @@
 class Solution {
 public:
+ int gcd(int a,int b)
+{
+    if (a == 0)
+        return b;
+    return gcd(b % a, a);
+}
+    
     int findGCD(vector<int>& nums) {
      int min = nums[0];
       int max = nums[0];
@@ -13,6 +20,6 @@ public:
               max = x;
           }
       }    
-   return __gcd(min,max);     
+   return gcd(min,max);     
     }
 };
