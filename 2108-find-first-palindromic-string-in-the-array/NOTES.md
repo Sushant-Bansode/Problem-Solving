@@ -1,0 +1,3 @@
+Wrote the Ispalindrome Boolean Function Above the Main ones and then,
+Wrote the Main Just checked in string of words is, if it is Palindrome or not,
+Via the Boolean Function Calling...
