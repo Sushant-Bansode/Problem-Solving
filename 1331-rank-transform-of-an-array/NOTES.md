@@ -1,1 +1,2 @@
-​
+Iterative Traverse Karun Mapla Tyanchya According aslela Array elemnent chya rank la set kela as element 2 or key value pair madll value Via Traversal Using Map ka Iterator and Simultanaeosly Rank++;
+then pushed Same in the answer Vector thats all........
