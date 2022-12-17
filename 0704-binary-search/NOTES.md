@@ -1,1 +1,2 @@
-Iterative Binary Search.
+Iterative Binary Search,
+Recursive Implementation is pending...
