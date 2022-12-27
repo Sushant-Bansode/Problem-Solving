@@ -12,10 +12,10 @@ public:
      for(int i = 1; i<n; i++){
          leftmax[i] = max(leftmax[i-1], arr[i]);
      }       
- int water =0;
+ int water = 0;
    for(int i = 0; i<n; ++i){
    water = water + (min(leftmax[i], rightmax[i]) - arr[i]);
    } 
-    return water;  
+return water;  
     }
 };
