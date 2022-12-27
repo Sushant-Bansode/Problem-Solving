@@ -1,0 +1,1 @@
+See the Water for one Block be nothing but, minimum of the Leftmax and Rightmax in the Respective, neighbours of the block, So We Get a Array of rightmax, and Leftmax
