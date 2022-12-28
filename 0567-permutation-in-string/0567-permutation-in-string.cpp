@@ -12,10 +12,14 @@ public:
           CT[s2[i]]++;
           CP[s1[i]]++;
     }
+   // Took 1st One Separately so as to include the last substring check.   
    if(CP == CT){ return true;}      
   for(int i = s1.length( ); i< s2.length( ); ++i){
-   CT[s2[i]]++;
-   CT[s2[i-s1.length( )]]--;   
+  // Increasing the next one of the Window 
+      CT[s2[i]]++;
+ // Decreasing the Previous one of the Window     
+   CT[s2[i-s1.length( )]]--;  
+ // To Include the Last Substring Check.     
   if(CP == CT){
   return true;
   } 
