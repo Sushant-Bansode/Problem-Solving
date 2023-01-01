@@ -21,11 +21,10 @@ class Solution{
      for(int i=1; i<=2*n; i++){
        fact2N *= i;
         fact2N %= m;
-    if(i==n) factN=fact2N; } 
-         
+    if(i==n) factN=fact2N; 
+     } 
          factN = (factN*factN)%m;
       return (fact2N * 1ll * inv(factN, m-2))%m;
-            
         }
 };
 
