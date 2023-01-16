@@ -27,13 +27,13 @@ public:
              return -1;
          }
     int minelement = st[0];
- for(int i = 0; i< st.size( ); ++i){
-     if(minelement > st[i]){
-     minelement = st[i];    
-     }
- }       
-return minelement;   
+    priority_queue <int, vector<int>, greater<int> > pq;
+   for (int i = 0; i < st.size( ); i++){
+        pq.push(st[i]);
     }
+  minelement = pq.top( );   
+     return minelement;      
+    }     
 };
 
 /**
