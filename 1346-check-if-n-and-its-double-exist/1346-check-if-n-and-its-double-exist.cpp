@@ -1,18 +1,14 @@
 class Solution {
 public:
     bool checkIfExist(vector<int>& arr) {
-       bool ans=false;
-        for(int i=0;i<arr.size();i++)
-        {
-            for(int j=0;j<arr.size();j++)
-            {
-                if(i!=j  && arr[i]==2*arr[j])
-                {
-                    ans=true;
-                }
-            }
-            
-        }
-        return ans;   
-    }
+      map<int,int> mp;
+   for(auto x: arr){mp[x]++;}
+  if(mp[0] > 1){return true;}
+   for(auto x: arr){
+       if(mp[x] != 0 && mp[2*x] != 0 && x != 0){
+           return true;
+       }
+   } 
+ return false;       
+   }
 };
