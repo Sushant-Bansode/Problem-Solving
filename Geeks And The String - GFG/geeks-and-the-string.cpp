@@ -7,21 +7,25 @@ using namespace std;
 class Solution {
   public:
     string removePair(string s) {
-          // code here
-        stack<char>st;
-        for(int i=0; i<s.length(); i++){
-            if(st.empty() || st.top()!=s[i])
-            st.push(s[i]);
-            else st.pop();
-        }
-        if(st.size()==0)
-        return "-1";
-        string ans="";
-        while(!st.empty()){
-            ans=st.top()+ans;
-            st.pop();
-        }
-        return ans;
+    stack<char> st;
+for(int i=0; i< s.length( ); ++i){
+ if(!st.empty( ) && st.top( )== s[i]){
+  st.pop( );}    
+ else{
+  st.push(s[i]);  }
+ }
+        
+ string ans="";
+ if(st.empty( )){
+     ans = "-1";
+     return ans;
+ }
+ while(!st.empty()){
+   ans += st.top();
+    st.pop();
+ }
+reverse(ans.begin( ), ans.end( ));        
+return ans;  
     }
 };
 
