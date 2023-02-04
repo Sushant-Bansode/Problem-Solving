@@ -1,10 +1,10 @@
 class Solution {
 public:
 bool hasGroupsSizeX(vector<int>& deck) {
-    map<int,int> mp;
-    for(auto x: deck){mp[x]++;}
-    
- vector<int> freq;
+map<int,int> mp;
+for(auto x: deck){mp[x]++;}    
+
+vector<int> freq;
  for(auto x: mp){freq.push_back(x.second);}
  int gcd_val = freq[0];
  for(auto x: freq){
