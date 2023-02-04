@@ -1,7 +1,8 @@
 class Solution {
 public:
     int firstMissingPositive(vector<int>& nums) {
-   map<int,int> mp;
+ // Brute Force Approach.
+  map<int,int> mp;
    for(auto x: nums){mp[x]++;}
    int n = nums.size( );     
   
