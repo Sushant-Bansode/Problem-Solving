@@ -24,7 +24,7 @@ bool validPalindrome(string s) {
      if(invalid == -1){
          return true;
      }
- cout << invalid << endl;       
+     
 return (check(s,invalid) || check(s, n-1-invalid));
     }
 };
