@@ -9,7 +9,7 @@ bool validateStackSequences(vector<int>& pushed, vector<int>& popped) {
          s.pop( );
           j++;  
         }
-        }
+    }
 return (s.empty( ) && j == popped.size( ));        
     }
 };
