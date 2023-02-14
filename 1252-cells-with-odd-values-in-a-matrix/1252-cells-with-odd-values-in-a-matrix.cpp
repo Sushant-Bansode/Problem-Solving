@@ -22,7 +22,6 @@ int oddCells(int m, int n, vector<vector<int>>& indices) {
         {
             for(int j=0;j<matrix[i].size();j++)
             {
-                cout<<matrix[i][j]<<" ";
                 if(matrix[i][j] %2 != 0)
                 {
                     count++;
