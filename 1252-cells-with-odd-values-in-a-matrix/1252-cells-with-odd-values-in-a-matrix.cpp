@@ -6,8 +6,6 @@ int oddCells(int m, int n, vector<vector<int>>& indices) {
         {
             int sr=indices[i][0];
             int cr=indices[i][1];
-            
-            
             for(int j=0;j<m;j++)
             {
                matrix[j][cr]+=1;
