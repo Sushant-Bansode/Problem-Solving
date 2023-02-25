@@ -1,3 +1,1 @@
-STL Code,
-Typical Binary Search, Question Finded the 1st Occurrence By Lower Bound and the Very Next Elements Presence Via Upper Bound and then Returned the Postions in push backed via vector, and incase if not founded then Given a Condition on low/First Occurnecee if its Itereator is pointing toward the end (By default in the Inbuilt Function)..
-Thats All Will Also write the Same using Binary SEarch......
+​
