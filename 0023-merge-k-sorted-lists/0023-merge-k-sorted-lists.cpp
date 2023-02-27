@@ -25,8 +25,7 @@ public:
             while(v.second--){
                 p->next = new ListNode(v.first);
                 p = p->next;
-            }
-            
+            }  
         }
         return ans->next;
     }
