@@ -9,7 +9,6 @@ public:
         }else{
             res.push_back(0);
         }
-      //  res.push_back(mod == 0);
     }
     return res;
     }
