@@ -20,22 +20,12 @@ public:
                 else
                 {
                     visited[row][col]=false;
-                      return false;
-                    
+                      return false;   
                 }
-         
         }
-        
-               return false;
-                   
-        
-        
-      
-         
+               return false;     
     }
-    
-    
-    
+        
     bool exist(vector<vector<char>>& board, string word) {
         
         
