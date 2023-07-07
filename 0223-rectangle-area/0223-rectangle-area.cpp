@@ -8,7 +8,6 @@ public:
                  int r= min(ay2,by2);
                  int s=max(ay1,by1);
                  int inter=(p-q)*(r-s);
-                cout<<a1<<" "<<a2<<" "<<inter<<endl;
             if((bx1)>(ax2)||(by1)>(ay2)||(bx2)<(ax1)||(by2)<(ay1))
                 return a1+a2;            
             else
